@@ -1,4 +1,8 @@
-def find_needle(haystack, needle):
-    return haystack.find(needle)
-print(find_needle("sadbutsad", "sad"))  
-print(find_needle("leetcode", "leeto"))
+s = "Hello World"
+length = 0
+for i in range(len(s) - 1, -1, -1):
+    if s[i] != ' ':
+        length += 1
+    elif length > 0:
+        break
+print(length)
