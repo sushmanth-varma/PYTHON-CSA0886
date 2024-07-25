@@ -1,0 +1,7 @@
+n=input("enter the number")
+dec=int(n,2)
+oct=oct(dec)
+hex=hex(dec)
+print("decimal number",dec)
+print("octal number",oct[2:])
+print("hex is:",hex[2:])
